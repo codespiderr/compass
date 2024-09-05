@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compass</title>
+    <link rel="icon" type="image/x-icon" href="projectfiles/Untitled2.png">
+    <style>
+        @font-face {
+            font-family: mainfont;
+            src: url(/projectfiles/Comfortaa-VariableFont_wght.ttf);
+        }
+        body {
+            font-family: 'mainfont', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #121212, #1f1f1f);
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        header {
+            background: rgba(31, 31, 31, 0.9);
+            color: #fff;
+            padding: 20px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header img {
+            height: 60px;
+            margin-right: 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: 700;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+        }
+        .section-title {
+            text-align: center;
+            margin: 40px 0 20px;
+            padding: 0px;
+        }
+        .section-title h2 {
+            margin: 0;
+            padding: 10px 20px;
+            background: rgba(50, 50, 50, 0.7);
+            border-radius: 12px;
+            font-size: 1.8em;
+            font-weight: 600;
+            border: 2px solid rgba(48, 48, 48, 1);
+        }
+        .info-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+        .info-box{
+            background: rgba(31, 31, 31, 0.8);
+            padding: 20px;
+            margin: 10px;
+            border-radius: 15px;
+            border: 2px solid rgba(61, 61, 61, 1);
+            flex: 1 1 220px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            max-width: 320px;
+            box-sizing: border-box;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        }
+        .large-box {
+            flex: 1 1 600px;
+            max-width: 900px;
+            background: rgba(31, 31, 31, 0.8);
+            padding: 20px;
+            margin: 10px;
+            border-radius: 15px;
+            border: 2px solid rgba(61, 61, 61, 1);
+            text-align: center;
+            transition: none; /* Remove transition for hovering */
+            box-shadow: none;  /* Remove box-shadow effect */
+        }
+        .large-box {
+            flex: 1 1 600px;
+            max-width: 1500px;
+        }
+        .info-box:hover{
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+        }
+        .info-box h3, .large-box h3 {
+            margin: 0;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+            font-weight: 600;
+        }
+        .info-box p, .large-box p {
+            margin: 0;
+            font-size: 1.1em;
+        }
+        a {
+            color: #03a9f4;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        a:hover {
+            color: #64b5f6;
+            text-decoration: underline;
+        }
+        .nested-box {
+            background: rgba(50, 50, 50, 0.7);
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 12px;
+            border: 2px solid rgba(40, 40, 40, 1);
+        }
+        table {
+        border-collapse: collapse;
+        width: 80%;
+        margin: 20px auto;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        color: #ffffff;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background: rgba(40,40,40, 0.7);
+            color: white;
+        }
+        tr{
+            background: rgb(28 , 28, 28);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="/index.html"><img src="/projectfiles/Untitled.png" alt="logo" style="height: 80px; width: 110px;"></a></div>
+        <h1>Amrita Entrance Exam (AEEE)</h1>
+    </header>
+
+
+    <div class="container">
+        <!-- Basic Information Section -->
+        <section>
+            <div class="section-title">
+                <h2>Basic Information</h2>
+            </div>
+            <div class="info-row">
+                <div class="info-box">
+                    <h3>Duration</h3>
+                    <p>2 Hours 30 Minutes</p>
+                </div>
+                <div class="info-box">
+                    <h3>Number of Questions</h3>
+                    <p>100</p>
+                </div>
+                <div class="info-box">
+                    <h3>Total Marks</h3>
+                    <p>300</p>
+                </div>
+            </div>
+            <div class="large-box">
+                <h3>Paper Details</h3>
+                <div class="nested-box">
+                    <p>Number of Sections: 4 (MCQ Phy , MCQ Chem , MCQ Math, MCQ English)</p>
+                    <div class="info-row">
+                        <div class="info-box">
+                            <h3>Physics</h3>
+                            <p>30 MCQs</p>
+                        </div>
+                        <div class="info-box">
+                            <h3>Chemistry</h3>
+                            <p>25 MCQs</p>
+                        </div>
+                        <div class="info-box">
+                            <h3>Mathematics</h3>
+                            <p>40 MCQs</p>
+                        </div>
+                        <div class="info-box">
+                            <h3>English</h3>
+                            <p>5 MCQs</p>
+                        </div>
+                    </div>
+                    <p>Question Types: MCQs Only</p>
+                </div>
+            </div>
+            <div class="info-row">
+                <div class="info-box">
+                    <h3>Marking Scheme</h3>
+                    <p>+3/-1 for MCQs</p>
+                </div>
+                <div class="info-box">
+                    <h3>Partial Marks</h3>
+                    <p>No</p>
+                </div>
+                <div class="info-box">
+                    <h3>Negative Marking</h3>
+                    <p>Yes</p>
+                </div>
+                <div class="info-box">
+                    <h3>Moving Back to Previous Sections</h3>
+                    <p>Allowed</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Exam Details Section -->
+        <section>
+            <div class="section-title">
+                <h2>Exam Details</h2>
+            </div>
+            <div class="info-row">
+                <div class="info-box">
+                    <h3>Rank Criteria</h3>
+                    <p>AEEE Criteria</p>
+                </div>
+                <div class="info-box">
+                    <h3>Exam Mode</h3>
+                    <p>Offline & CBT</p>
+                </div>
+                <div class="info-box">
+                    <h3>Difficulty Compared to JEE Mains 2024 (MPC)</h3>
+                    <p>Math : Easier, Phy : Similar , Chem : Similar</p>
+                </div>
+                <div class="info-box">
+                    <h3>Slot Booking</h3>
+                    <p>Yes</p>
+                </div>
+                <div class="info-box">
+                    <h3>Calculator</h3>
+                    <p>Virtual calculator provided</p>
+                </div>
+                <div class="info-box">
+                    <h3>Number of Attempts</h3>
+                    <p>2 attempts allowed</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Syllabus, Seats, Eligibility Section -->
+        <section>
+            <div class="section-title">
+                <h2>Syllabus, Seats, Eligibility</h2>
+            </div>
+            <div class="info-row">
+                <div class="info-box">
+                    <h3>Latest Syllabus</h3>
+                    <p><a href="https://drive.google.com/file/d/183FiD5x6e63Qz-BoDEq-SvsRknUqsU1D/view?usp=sharing">Syllabus & Details</a></p>
+                </div>
+                <div class="info-box">
+                    <h3>Eligibility Criteria for the College</h3>
+                    <p> 55% in Physics, Chemistry & Mathematics separately and an aggregate minimum of 60% in Physics, Chemistry & Mathematics. </p>
+                </div>
+                <div class="info-box">
+                    <h3>Number of Students (Varies)</h3>
+                    <p>50000+ applicants</p>
+                </div>
+            </div>
+            <div class="large-box">
+                <h3>Total Seats & Campuses</h3>
+                <div class="nested-box">
+                    <p>Total Seats: 6900 </p>
+                    <p>Campuses: Amaravati,Amritapuri,Bengaluru,Chennai,Coimbatore,Faridabad,Nagercoil</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Resources and FAQs Section -->
+        <section>
+            <div class="section-title">
+                <h2>Resources and FAQs</h2>
+            </div>
+            <div class="info-row">
+                <div class="info-box">
+                    <h3>NCERT</h3>
+                    <p>Must for Chemistry , Recommended for Physics</p>
+                </div>
+                <div class="info-box">
+                    <h3>Exam Website</h3>
+                    <p><a href="https://manipal.edu">manipal.edu</a></p>
+                </div>
+                <div class="info-box">
+                    <h3>Best Mocks</h3>
+                    <p>Mathongo , PhoduClub </p>
+                </div>
+                <div class="info-box">
+                    <h3>Official Mock</h3>
+                    <p><a href="https://www.manipal.edu/mu/admission/indian-students/online-entrance-exam-overview/MockTest.html#:~:text=Program%20Name-,BTech,-BTech%20%26%20BPharm%20PharmD">Official Mock Test By Manipal</a></p>
+                </div>
+                <div class="info-box">
+                    <h3>High-Weightage Chapters</h3>
+                    <p>Varies</p>
+                </div>
+                <div class="info-box">
+                    <h3>Acceptance Rate</h3>
+                    <p>11.5%</p>
+                </div>
+                <div class="info-box">
+                    <h3>Droppers Allowed  (Candidates passing out in 2024 and passed out in 2023 can apply.)</h3>
+                    <p>Yes</p>
+                </div>
+                <div class="info-box">
+                    <h3>Tips by Toppers</h3>
+                    <p>{}</p>
+                </div>
+                <div class="info-box">
+                    <h3>Mock Test Reviews</h3>
+                    <p>{}</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Score and Ranks Section -->
+        <section>
+            <div class="section-title">
+                <h2>Score and Ranks</h2>
+            </div>
+            <div class="info-row">
+                <div class="info-box">
+                    <h3>Good Score Range</h3>
+                    <p>150 - 180 marks for CSE Main Campus</p>
+                </div>
+                <div class="info-box">
+                    <h3>Cutoff Ranks</h3>
+                    <p><a href="https://drive.google.com/drive/folders/1F7HcCk6KBieAm7tX4DqxssQ_XvCitckP?usp=sharing">Round Wise Cutoffs</a></p>
+                </div>
+                <div class="info-box">
+                    <h3>Marks vs Rank</h3>
+                    <p><a href="#marks_vs_rank">Marks vs Ranks</a></p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Important Dates and Fees Section -->
+        <section>
+            <div class="section-title">
+                <h2>Important Dates and Fees</h2>
+            </div>
+            <div class="info-row">
+                <div class="info-box">
+                    <h3>Exam Registration Date</h3>
+                    <p>Jan 15, 2024</p>
+                </div>
+                <div class="info-box">
+                    <h3>Exam Date</h3>
+                    <p>April 20, 2024</p>
+                </div>
+                <div class="info-box">
+                    <h3>Slot Booking Date</h3>
+                    <p>March 15, 2024</p>
+                </div>
+                <div class="info-box">
+                    <h3>Admit Card Release Date</h3>
+                    <p>April 10, 2024</p>
+                </div>
+                <div class="info-box">
+                    <h3>Results Date</h3>
+                    <p>May 5, 2024</p>
+                </div>
+                <div class="info-box">
+                    <h3>Counselling Date</h3>
+                    <p>June 1, 2024</p>
+                </div>
+                <div class="info-box">
+                    <h3>Exam Fee</h3>
+                    <p>INR 1200/-</p>
+                </div>
+                <div class="info-box">
+                    <h3>Counselling Fee</h3>
+                    <p>INR 10,000</p>
+                </div>
+                <div class="info-box">
+                    <h3>College Fee</h3>
+                    <p>INR 3,00,000 per year</p>
+                </div>
+            </div>
+        </section>
+        <section id="marks_vs_rank">
+            <div class="section-title">
+                <h2>Marks vs Rank</h2>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>MET Marks</th>
+                        <th>Boards Percentage</th>
+                        <th>Board</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>3000</td>
+                        <td>130</td>
+                        <td>91%</td>
+                        <td>Not specified</td>
+                    </tr>
+                    <tr>
+                        <td>3135</td>
+                        <td>155</td>
+                        <td>88.5%</td>
+                        <td>CBSE</td>
+                    </tr>
+                    <tr>
+                        <td>3500</td>
+                        <td>126</td>
+                        <td>93%</td>
+                        <td>Telangana</td>
+                    </tr>
+                    <tr>
+                        <td>4037</td>
+                        <td>122</td>
+                        <td>91%</td>
+                        <td>Not specified</td>
+                    </tr>
+                    <tr>
+                        <td>6100</td>
+                        <td>127</td>
+                        <td>88%</td>
+                        <td>Telangana</td>
+                    </tr>
+                    <tr>
+                        <td>9412</td>
+                        <td>130</td>
+                        <td>81.1%</td>
+                        <td>Telangana</td>
+                    </tr>
+                    <tr>
+                        <td>10519</td>
+                        <td>123</td>
+                        <td>85%</td>
+                        <td>CBSE</td>
+                    </tr>
+                    <tr>
+                        <td>14116</td>
+                        <td>103</td>
+                        <td>82.75%</td>
+                        <td>CBSE</td>
+                    </tr>
+                    <tr>
+                        <td>22388</td>
+                        <td>167</td>
+                        <td>79.5%</td>
+                        <td>Not specified</td>
+                    </tr>
+                    <tr>
+                        <td>22570</td>
+                        <td>102</td>
+                        <td>70%</td>
+                        <td>CBSE</td>
+                    </tr>
+                    <tr>
+                        <td>29777</td>
+                        <td>98</td>
+                        <td>62%</td>
+                        <td>Maharashtra</td>
+                    </tr>
+                    <tr>
+                        <td>30000</td>
+                        <td>74</td>
+                        <td>67%</td>
+                        <td>PCME</td>
+                    </tr>
+                    <tr>
+                        <td>30931</td>
+                        <td>88</td>
+                        <td>62.25%</td>
+                        <td>CBSE</td>
+                    </tr>
+                    <tr>
+                        <td>35000</td>
+                        <td>39</td>
+                        <td>60%</td>
+                        <td>Not specified</td>
+                    </tr>
+                    <tr>
+                        <td>35000</td>
+                        <td>61</td>
+                        <td>54.3%</td>
+                        <td>Not specified</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+    
+</body>
+</html>

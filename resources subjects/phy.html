@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physics Resources</title>
+    <link rel="icon" type="image/x-icon" href="/projectfiles/untitled2.png">
+    <style>
+        @font-face {
+            font-family: mainfont;
+            src: url(/projectfiles/Comfortaa-VariableFont_wght.ttf);
+        }
+        body {
+            background: linear-gradient(135deg, #121212, #1f1f1f);
+            font-family: mainfont;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: rgba(31, 31, 31, 0.9);
+            color: #fff;
+            padding: 20px 0;
+            min-height: 80px;
+            border-bottom: 2px solid rgb(56, 56, 56);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        h1 {
+            text-align: center;
+            color: #fff;
+            margin-bottom: 30px;
+        }
+        #container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .section-box {
+            background-color: rgba(31, 31, 31, 0.9);
+            border: 2px solid rgb(64, 64, 64);
+            border-radius: 20px;
+            width: 200px;
+            margin: 15px;
+            padding: 150px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            text-align: center;
+            text-decoration: none;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .section-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+        }
+        .section-box img {
+            width: 200px;
+            height: 200px;
+            margin-top: 15px;
+        }
+        .section-box h2 {
+            margin-top: 0px;
+            color: #ffffff;
+            font-size: 30px;
+            margin-bottom: 40px;
+        }
+        .section-box a {
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"><a href='/'><img src="/projectfiles/Untitled.png" alt="logo" style="height: 80px; width: 110px;"></a></div>
+        <h1>Physics Resources</h1>
+    </header>
+
+    <div id="container">
+        <!-- YouTube Channels Section -->
+        <a href="phyresources/phyyoutube.html" class="section-box">
+            <h2>YouTube Channels</h2>
+            <img src="/projectfiles/path_to_youtube_logo.png" >
+        </a>
+
+        <!-- Recommended Books Section -->
+        <a href="phyresources/phy-recommended-books.html" class="section-box">
+            <h2>Recommended Books</h2>
+            <img src="/projectfiles/path_to_books_logo.png">
+        </a>
+    </div>
+</body>
+</html>

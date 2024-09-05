@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compass</title>
+    <link rel="icon" type="image/x-icon" href="projectfiles/Untitled2.png">
+    <style>
+        @font-face {
+            font-family: mainfont;
+            src: url(/projectfiles/Comfortaa-VariableFont_wght.ttf);
+        }
+        header {
+            background: rgba(31, 31, 31, 0.9);
+            color: #fff;
+            padding: 20px 0;
+            min-height: 80px;
+            border-bottom: 2px solid rgb(56, 56, 56);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        #container{
+            color: white;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-top: 60px;
+            height: 400px;
+        }
+        #box{
+            display: flex;
+            background-color: rgba(31, 31, 31, 0.9);
+            border: rgb(64, 64, 64);
+            border-style: solid;
+            align-items: center;
+            justify-content: center;
+            height: 400px;
+            padding-left: 40px;
+            padding-right: 40px;
+            width: 200px;
+            border-radius: 50px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        #box:hover{
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+        }
+        #boxlink{
+            text-decoration: none;
+            color: white;
+        }
+        #boxlink:visited{
+            color: white;
+        }
+  
+    </style>
+</head>
+<body style="background: linear-gradient(135deg, #121212, #1f1f1f); font-family: mainfont;">
+    <header>
+        <div class="logo"><a href="index.html"><img src="/projectfiles/Untitled.png" alt="logo" style="height: 80px; width: 110px;"></a></div>
+        <h1>Resources</h1>
+    </header>
+    <div id="container">
+        <a href="resources subjects/Maths.html" id="boxlink">
+            <div id="box">
+                <h1>Mathematics</h1>
+            </div>
+        </a>
+        <a href="resources subjects/phy.html" id="boxlink">
+            <div id="box">
+                <h1>Physics</h1>
+            </div>
+        </a>
+        <a href="resources subjects/chem.html" id="boxlink">
+            <div id="box">
+                <h1>Chemistry</h1>
+            </div>
+        </a>
+        <a href="resources subjects/allinone.html" id="boxlink">
+            <div id="box">
+                <h1>All-in-one</h1>
+            </div>
+        </a>
+    </div>
+    
+</body>
+</html>

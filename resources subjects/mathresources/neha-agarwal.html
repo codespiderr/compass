@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compass</title>
+    <link rel="icon" type="image/x-icon" href="/projectfiles/Untitled2.png">
+    <style>
+        @font-face {
+            font-family: mainfont;
+            src: url(/projectfiles/Comfortaa-VariableFont_wght.ttf);
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: mainfont;
+            background-color: #121212;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin-bottom: 100px;
+            margin-top: 30px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .channel-link {
+            text-decoration: none;
+            color: #1e90ff;
+            font-size: 1.2em;
+        }
+
+        .playlists {
+            margin-top: 20px;
+        }
+
+        .playlists h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            text-align: center;
+            background-color: #121212; 
+            border-radius: 25px; 
+            padding: 10px;
+            border: solid;
+            border-color: white;
+        }
+
+        .playlist-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            
+        }
+
+        .playlist {
+            background-color: #1c1c1c;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .playlist:hover{
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+        }
+
+        .playlist img {
+            max-width: 100%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .playlist p {
+            font-size: 1.1em;
+            color: white;
+        }
+
+        .playlist a {
+            text-decoration: none;
+            color: #1e90ff;
+        }
+    </style>
+</head>
+<body style="background: linear-gradient(135deg, #121212, #1f1f1f);">
+    <div class="container">
+        <header>
+            <div class="logo"><a href="/index.html"><img src="/projectfiles/untitled.png" alt="logo" style="height: 80px; width: 110px; margin-top: 0px;"></a></div>
+            <h1 style="margin-top: 10px; margin-bottom: 10px;">Neha Agrawal Mathematically Inclined</h1>
+            <a href="https://www.youtube.com/@nehamamsarmy" target="_blank" class="channel-link">Visit Channel</a>
+        </header>
+        <section class="playlists">
+            <h2>Jee Mains Playlists</h2>
+            <div class="playlist-grid">
+                <!-- Example Playlist -->
+                <div class="playlist">
+                    <a href="https://youtube.com/playlist?list=PLTa2m6WeLW__zL1AoV8uEG13xiQMj2RU8&si=ccOl7dPTHZzQ2yZQ" target="_blank">
+                        <img src="/projectfiles/neha agarwal playlist 1 thumbnail.jpg" alt="Playlist Thumbnail">
+                        <p>Doing Math for the First Time</p>
+                    </a>
+                </div>
+                <div class="playlist">
+                    <a href="https://youtube.com/playlist?list=PLTa2m6WeLW_8un4OvTk79tW9MI13Lf9y-&si=E3CrC-fqzuW_oLf1" target="_blank">
+                        <img src="/projectfiles/neha agarwal playlist 2 thumbnail.jpg" alt="Playlist Thumbnail">
+                        <p>Jee Mains 2025</p>
+                    </a>
+                </div>
+                <div class="playlist">
+                    <a href="https://youtube.com/playlist?list=PLTa2m6WeLW_99wNxR55gz86pI-YcMKvfr&si=Grh1es7EUHVeu-su" target="_blank">
+                        <img src="/projectfiles/neha agarwal playlist 3 thumbnail.jpg" alt="Playlist Thumbnail">
+                        <p>Jee Mains 2023 PYQ's</p>
+                    </a>
+                </div>
+                <div class="playlist">
+                    <a href="https://youtube.com/playlist?list=PLTa2m6WeLW_94iF3gY7ZHeC8_U1zk0V8X&si=-MuoGdCQ5gaf6xuz" target="_blank">
+                        <img src="/projectfiles/neha agarwal playlist 4 thumbnail.jpg" alt="Playlist Thumbnail">
+                        <p>Jee Mains 2024 Jan PYQ's</p>
+                    </a>
+                </div>
+                <div class="playlist">
+                    <a href="https://youtube.com/playlist?list=PLTa2m6WeLW_8uBnLp-dP4DuKt08OSqWEJ&si=46AwXq4UfaAHLs5-" target="_blank">
+                        <img src="/projectfiles/neha agarwal playlist 5 thumbnail.jpg" alt="Playlist Thumbnail">
+                        <p>Jee Mains 2024 Apr PYQ's</p>
+                    </a>
+                </div>
+                <!-- Add more playlists as needed -->
+            </div>
+            <h2>Jee Advanced Playlists</h2>
+            <div class="playlist-grid">
+                <!-- Example Playlist -->
+                <div class="playlist">
+                    <a href="https://www.youtube.com/playlist?list=PLTa2m6WeLW_-0GbVZCHA9mJDUsdKUtR3E" target="_blank">
+                        <img src="/projectfiles/neha agarwal playlist 6 thumbnail.jpg" alt="Playlist Thumbnail">
+                        <p>Basic Advanced Theory</p>
+                    </a>
+                </div>
+                <div class="playlist">
+                    <a href="https://www.youtube.com/playlist?list=PLTa2m6WeLW_-6uFlNxdg0hgm5osJaFeK4" target="_blank">
+                        <img src="/projectfiles/neha agarwal playlist 7 thumbnail.jpg" alt="Playlist Thumbnail">
+                        <p>Advanced Focused sessions</p>
+                    </a>
+                </div>
+                <div class="playlist">
+                    <a href="https://www.youtube.com/playlist?list=PLTa2m6WeLW_8RWCbep8UZZ1io5wVupC6t" target="_blank">
+                        <img src="/projectfiles/neha agarwal playlist 8 thumbnail.jpg" alt="Playlist Thumbnail">
+                        <p>Advanced PYQs</p>
+                    </a>
+                </div>
+            </div>
+            <h2>PDF Resources from channel</h2>
+            <div class = "playlist-grid">
+                <div class="playlist">
+                    <a href="https://drive.google.com/drive/folders/1If8pwsKxJmFZP6ot7tsRv_-_ThOxYme4?usp=sharing" target="_blank">
+                        <img src="/projectfiles/handwrittennotesimage.png" alt="Playlist Thumbnail" height="200px" width="200px">
+                        <p>GDrive Folder</p>
+                    </a>
+                </div>
+                <div class = "playlist-grid">
+                    <div class="playlist">
+                        <a href="https://drive.google.com/drive/folders/1nNVyzOdAguwbVEzyIz10gb4edRLivOXm?usp=sharing" target="_blank">
+                            <img src="/projectfiles/toppyqsimage.png" alt="Playlist Thumbnail" height="200px" width="200px">
+                            <p>GDrive Folder</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+</body>
+</html>

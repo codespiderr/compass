@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Resources</title>
+    <link rel="icon" type="image/x-icon" href="/projectfiles/Untitled2.png">
+    <style>
+        @font-face {
+            font-family: mainfont;
+            src: url(/projectfiles/Comfortaa-VariableFont_wght.ttf);
+        }
+        body {
+            background: linear-gradient(135deg, #121212, #1f1f1f);
+            font-family: mainfont;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: rgba(31, 31, 31, 0.9);
+            color: #fff;
+            padding: 20px 0;
+            min-height: 80px;
+            border-bottom: 2px solid rgb(56, 56, 56);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        h1 {
+            text-align: center;
+            color: #fff;
+            margin-bottom: 30px;
+        }
+        #container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .box {
+            background-color: rgba(31, 31, 31, 0.9);
+            border: 2px solid rgb(64, 64, 64);
+            border-radius: 20px;
+            width: 250px;
+            margin: 15px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-decoration: none;
+        }
+        .box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+        }
+        .box img {
+            width: 100%;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+        .box h2 {
+            color: #ffffff;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .box a {
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"><a href='/'><img src="/projectfiles/Untitled.png" alt="logo" style="height: 80px; width: 110px;"></a></div>
+        <h1>Math Resources</h1>
+    </header>
+    <div id="container">
+        <!-- Neha Agarwal Mathematically Inclined -->
+        <a href="neha-agarwal.html" class="box">
+            <h2>Neha Agarwal Mathematically Inclined</h2>
+            <img src="\projectfiles\path_to_neha_agarwal_image.jpg" alt="Neha Agarwal Channel">
+        </a>
+
+        <!-- Unacademy/Vora (Nishant Vora) -->
+        <a href="nishant-vora.html" class="box">
+            <h2>Unacademy/Nishant Vora</h2>
+            <img src="\projectfiles\path_to_nishant_vora_image1.jpg" alt="Nishant Vora Channel">
+        </a>
+
+        <!-- Math Unplugged -->
+        <a href="math-unplugged.html" class="box">
+            <h2>Math Unplugged</h2>
+            <img src="\projectfiles\path_to_math_unplugged_image.jpg" alt="Math Unplugged Channel">
+        </a>
+
+        <!-- Mathongo -->
+        <a href="mathongo.html" class="box">
+            <h2>Mathongo</h2>
+            <img src="\projectfiles\path_to_mathongo_image.jpg" alt="Mathongo Channel">
+        </a>
+
+        <!-- Arvind Kalia (Jee Nexus) -->
+        <a href="arvind-kalia.html" class="box">
+            <h2>Arvind Kalia (Jee Nexus)</h2>
+            <img src="\projectfiles\path_to_arvind_kalia_image.jpg" alt="Arvind Kalia Channel">
+        </a>
+    </div>
+</body>
+</html>

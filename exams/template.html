@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compass</title>
+    <link rel="icon" type="image/x-icon" href="/projectfiles/Untitled2.png">
+    <style>
+        @font-face {
+            font-family: mainfont;
+            src: url(/projectfiles/Comfortaa-VariableFont_wght.ttf);
+        }
+        body {
+            font-family: 'mainfont', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #121212, #1f1f1f);
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        header {
+            background: rgba(31, 31, 31, 0.9);
+            color: #fff;
+            padding: 20px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header img {
+            height: 60px;
+            margin-right: 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: 700;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+        }
+        .section-title {
+            text-align: center;
+            margin: 40px 0 20px;
+            padding: 0px;
+        }
+        .section-title h2 {
+            margin: 0;
+            padding: 10px 20px;
+            background: rgba(50, 50, 50, 0.7);
+            border-radius: 12px;
+            font-size: 1.8em;
+            font-weight: 600;
+            border: 2px solid rgba(48, 48, 48, 1);
+        }
+        .info-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+        .info-box{
+            background: rgba(31, 31, 31, 0.8);
+            padding: 20px;
+            margin: 5px;
+            border-radius: 15px;
+            border: 2px solid rgb(75, 75, 75);
+            flex: 1 1 220px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            max-width: 320px;
+            box-sizing: border-box;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        }
+        .large-box {
+            flex: 1 1 600px;
+            max-width: 900px;
+            background: rgba(31, 31, 31, 0.8);
+            padding: 20px;
+            margin: 10px;
+            border-radius: 15px;
+            border: 2px solid rgba(61, 61, 61, 1);
+            text-align: center;
+            transition: none; /* Remove transition for hovering */
+            box-shadow: none;  /* Remove box-shadow effect */
+
+
+        }
+        .large-box {
+            flex: 1 1 600px;
+            max-width: 1500px;
+        }
+        .info-box:hover{
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+        }
+        .info-box h3, .large-box h3 {
+            margin: 0;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+            font-weight: 600;
+        }
+        .info-box p, .large-box p {
+            margin: 0;
+            font-size: 1.1em;
+        }
+        a {
+            color: #03a9f4;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        a:hover {
+            color: #70b8f4;
+            text-decoration: none;
+            background-color: #5454546a;
+            padding: 4px;
+            border-radius: 20px;
+        }
+        .nested-box {
+            background: rgba(50, 50, 50, 0.7);
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 12px;
+            border: 2px solid rgba(70, 70, 70, 1);
+        }
+        .fee-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 30px;
+        }
+        .fee-table th, .fee-table td {
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 12px;
+            text-align: left;
+        }
+        .fee-table th {
+            background: rgba(50, 50, 50, 0.8);
+            color: #fff;
+            font-weight: 600;
+            font-size: 1.2em;
+            text-transform: uppercase;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+        }
+        .fee-table td {
+            background: rgba(31, 31, 31, 0.7);
+            color: #ddd;
+        }
+        .fee-table tr:nth-child(even) {
+            background: rgba(31, 31, 31, 0.6);
+        }
+        .fee-table tbody tr:hover {
+            background: rgba(50, 50, 50, 0.7);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="/index.html"><img src="/projectfiles/Untitled.png" alt="logo" style="height: 80px; width: 110px;"></a></div>
+        <h1>[Exam Name] 2024</h1>
+    </header>
+
+
+    <div class="container">
+        <!-- Basic Information Section -->
+        <section>
+            <div class="section-title">
+                <h2>Basic Information</h2>
+            </div>
+            <div class="info-row">
+                <div class="info-box">
+                    <h3>Duration</h3>
+                    <p>[Duration]</p>
+                </div>
+                <div class="info-box">
+                    <h3>Number of Questions</h3>
+                    <p>[Number of Questions]</p>
+                </div>
+                <div class="info-box">
+                    <h3>Total Marks</h3>
+                    <p>[Total Marks]</p>
+                </div>
+            </div>
+            <div class="large-box">
+                <h3>Paper Details</h3>
+                <div class="nested-box">
+                    <p>Number of Sections: [Number of Sections]</p>
+                    <div class="info-row">
+                        <div class="info-box">
+                            <h3>Subject 1</h3>
+                            <p>[Details]</p>
+                        </div>
+                        <div class="info-box">
+                            <h3>Subject 2</h3>
+                            <p>[Details]</p>
+                        </div>
+                        <div class="info-box">
+                            <h3>Subject 3</h3>
+                            <p>[Details]</p>
+                        </div>
+                        <div class="info-box">
+                            <h3>Subject 4</h3>
+                            <p>[Details]</p>
+                        </div>
+                        <div class="info-box">
+                            <h3>Subject 5</h3>
+                            <p>[Details]</p>
+                        </div>
+                    </div>
+                    <p>Question Types: [MCQs & Numericals]</p>
+                </div>
+            </div>
+            <div class="info-row">
+                <div class="info-box">
+                    <h3>Marking Scheme</h3>
+                    <p>[Marking Scheme]</p>
+                </div>
+                <div class="info-box">
+                    <h3>Partial Marks</h3>
+                    <p>[Yes/No]</p>
+                </div>
+                <div class="info-box">
+                    <h3>Negative Marking</h3>
+                    <p>[Yes/No]</p>
+                </div>
+                <div class="info-box">
+                    <h3>Moving Back to Previous Sections</h3>
+                    <p>[Allowed/Not allowed]</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Exam Details Section -->
+        <section>
+            <div class="section-title">
+                <h2>Exam Details</h2>
+            </div>
+            <div class="info-row">
+                <div class="info-box">
+                    <h3>Rank Criteria</h3>
+                    <p>[Rank Criteria]</p>
+                </div>
+                <div class="info-box">
+                    <h3>Exam Mode</h3>
+                    <p>[Online/Offline]</p>
+                </div>
+                <div class="info-box">
+                    <h3>Difficulty</h3>
+                    <p>[Relative Difficulty]</p>
+                </div>
+                <div class="info-box">
+                    <h3>Slot Booking</h3>
+                    <p>[Yes/No]</p>
+                </div>
+                <div class="info-box">
+                    <h3>Calculator</h3>
+                    <p>[Yes/No]</p>
+                </div>
+                <div class="info-box">
+                    <h3>Number of Attempts</h3>
+                    <p>[Attempts]</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Syllabus, Seats, Eligibility Section -->
+        <section>
+            <div class="section-title">
+                <h2>Syllabus, Seats, Eligibility</h2>
+            </div>
+            <div class="info-row">
+                <div class="info-box">
+                    <h3>Latest Syllabus</h3>
+                    <p><a href="#">View Syllabus</a></p>
+                </div>
+                <div class="info-box">
+                    <h3>Eligibility Criteria</h3>
+                    <p><a href="#">Check Eligibility</a></p>
+                </div>
+                <div class="info-box">
+                    <h3>Number of Students</h3>
+                    <p>[Number]</p>
+                </div>
+            </div>
+            <div class="large-box">
+                <h3>Total Seats and Seats in Various Campuses</h3>
+                <p>[Seats Information]</p>
+            </div>
+        </section>
+
+
+        <!-- Resources and FAQs Section -->
+        <section>
+            <div class="section-title">
+                <h2>Resources and FAQs</h2>
+            </div>
+            <div class="info-row">
+                <div class="info-box">
+                    <h3>NCERT</h3>
+                    <p><a href="#">NCERT Books</a></p>
+                </div>
+                <div class="info-box">
+                    <h3>Exam Website</h3>
+                    <p><a href="#">Official Website</a></p>
+                </div>
+                <div class="info-box">
+                    <h3>Best Mocks</h3>
+                    <p><a href="#">Mock Tests</a></p>
+                </div>
+                <div class="info-box">
+                    <h3>Official Mocks</h3>
+                    <p><a href="#">Official Mock Tests</a></p>
+                </div>
+                <div class="info-box">
+                    <h3>High-Weightage Chapters</h3>
+                    <p><a href="#">Important Chapters</a></p>
+                </div>
+                <div class="info-box">
+                    <h3>Acceptance Rate</h3>
+                    <p>[Acceptance Rate]</p>
+                </div>
+                <div class="info-box">
+                    <h3>Droppers Allowed</h3>
+                    <p>[Yes/No]</p>
+                </div>
+                <div class="info-box">
+                    <h3>Tips by Toppers</h3>
+                    <p><a href="#">Tips by Toppers</a></p>
+                </div>
+                <div class="info-box">
+                    <h3>Mock Test Reviews</h3>
+                    <p><a href="#">Reviews</a></p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Scores and Ranks Section -->
+        <section>
+            <div class="section-title">
+                <h2>Scores and Ranks</h2>
+            </div>
+            <div class="info-row">
+                <div class="info-box">
+                    <h3>Good Score Range</h3>
+                    <p>[Score Range]</p>
+                </div>
+                <div class="info-box">
+                    <h3>Cutoff Link</h3>
+                    <p><a href="#">View Cutoffs</a></p>
+                </div>
+                <div class="info-box">
+                    <h3>Marks vs Rank Document</h3>
+                    <p><a href="#">Marks vs Rank</a></p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Important Dates and Fees Section -->
+        <section>
+            <div class="section-title">
+                <h2>Important Dates and Fees</h2>
+            </div>
+            <div class="info-row">
+                <div class="info-box">
+                    <h3>Exam Registration Date</h3>
+                    <p>[Date]</p>
+                </div>
+                <div class="info-box">
+                    <h3>Exam Date</h3>
+                    <p>[Date]</p>
+                </div>
+                <div class="info-box">
+                    <h3>Slot Booking Date</h3>
+                    <p>[Date]</p>
+                </div>
+                <div class="info-box">
+                    <h3>Admit Card Release Date</h3>
+                    <p>[Date]</p>
+                </div>
+                <div class="info-box">
+                    <h3>Results Date</h3>
+                    <p>[Date]</p>
+                </div>
+                <div class="info-box">
+                    <h3>Counselling Date</h3>
+                    <p>[Date]</p>
+                </div>
+                <div class="info-box">
+                    <h3>Exam Fee</h3>
+                    <p>[Amount]</p>
+                </div>
+                <div class="info-box">
+                    <h3>Counselling Fee</h3>
+                    <p>[Amount]</p>
+                </div>
+                <div class="info-box">
+                    <h3>College Fee</h3>
+                    <p>[Amount]</p>
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+</body>
+</html>

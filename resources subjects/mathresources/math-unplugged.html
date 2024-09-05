@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compass</title>
+    <link rel="icon" type="image/x-icon" href="/projectfiles/Untitled2.png">
+    <style>
+        @font-face {
+            font-family: mainfont;
+            src: url(/projectfiles/Comfortaa-VariableFont_wght.ttf);
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: mainfont;
+            background-color: #121212;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin-top: 30px;
+            margin-bottom: 100px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .channel-link {
+            text-decoration: none;
+            color: #1e90ff;
+            font-size: 1.2em;
+        }
+
+        .playlists {
+            margin-top: 20px;
+        }
+
+        .playlists h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            text-align: center;
+            background-color: #121212; 
+            border-radius: 25px; 
+            padding: 10px;
+            border: solid;
+            border-color: white;
+        }
+
+        .playlist-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .playlist {
+            background-color: #1c1c1c;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .playlist:hover{
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+        }
+
+        .playlist img {
+            max-width: 100%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .playlist p {
+            font-size: 1.1em;
+            color: white;
+        }
+
+        .playlist a {
+            text-decoration: none;
+            color: #1e90ff;
+        }
+    </style>
+</head>
+<body style="background: linear-gradient(135deg, #121212, #1f1f1f);">
+    <div class="container">
+        <header>
+            <div class="logo"><a href="/index.html"><img src="/projectfiles/untitled.png" alt="logo" style="height: 80px; width: 110px; margin-top: 0px;"></a></div>
+            <h1 style="margin-top: 10px; margin-bottom: 10px;">Math Unplugged</h1>
+            <a href="https://www.youtube.com/@MathsUnpluggedIndia" target="_blank" class="channel-link">Visit Channel</a>
+        </header>
+        <section class="playlists">
+            <h2>Playlists</h2>
+            <div class="playlist-grid">
+                <!-- Example Playlist -->
+                <div class="playlist">
+                    <a href="https://www.youtube.com/playlist?list=PL2dPD7oDhSn9sWNfHbD8_VAs4as19rD6J" target="_blank">
+                        <img src="/projectfiles/math unplugged playlist 1 thumbnail.jpg" alt="Playlist Thumbnail">
+                        <p>Unbeatable Crash Course</p>
+                    </a>
+                </div>
+                <div class="playlist">
+                    <a href="https://www.youtube.com/playlist?list=PL2dPD7oDhSn_lH-jOlSdChSWYeEfBxcUH" target="_blank">
+                        <img src="/projectfiles/math unplugged playlist 2 thumbnail.jpg" alt="Playlist Thumbnail">
+                        <p>Ideas in Math</p>
+                    </a>
+                </div>
+
+            </div>
+            <h2>Other Reources</h2>
+            <div class="playlist-grid">
+                <!-- Example Playlist -->
+                <div class="playlist">
+                    <a href="https://drive.google.com/drive/folders/1TEIdSlr5fLnDA6y9tyyvUgvXxPyo8XDc" target="_blank">
+                        <img src="/projectfiles/handwrittennotesimage.png" alt="Playlist Thumbnail" height="200px" width="200px">
+                        <p>Math Unplugged GDrive</p>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+    </div>
+</body>
+</html>

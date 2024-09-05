@@ -1,0 +1,67 @@
+#main_logo{
+    height: 100px;   
+}
+@font-face {
+    font-family: mainfont;
+    src: url(projectfiles/Comfortaa-VariableFont_wght.ttf);
+  }
+#contact{
+  font-family: mainfont;
+  justify-content: flex-end;
+}
+#contactabout{
+  font-family: mainfont;
+  justify-content: space-evenly;
+}
+
+#center{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    font-size: 26px;
+    font-family: mainfont;
+    color: rgb(218, 218, 218);
+}
+
+
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    
+  }
+
+a{
+    text-decoration: none;
+    color: rgb(218, 218, 218);
+    padding: 0px;
+    border-radius: 25px;
+    margin-left: 10px;
+    
+}
+
+#icon{
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+#icon:hover{
+  transform: translateY(-5px);
+}
+
+#exam_details_page{
+  font-family: mainfont;
+  color: rgb(0, 0, 51);
+  background-color: rgb(218, 218, 218);
+  padding: 10px;
+  border-radius: 25px;
+  
+}
+#exam_details_page:hover{
+  background-color: rgb(160, 160, 160);
+}

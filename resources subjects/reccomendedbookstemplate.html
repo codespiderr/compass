@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Books Resources</title>
+    <link rel="icon" type="image/x-icon" href="projectfiles/Untitled2.png">
+    <style>
+        @font-face {
+            font-family: mainfont;
+            src: url(/projectfiles/Comfortaa-VariableFont_wght.ttf);
+        }
+        body {
+            background: linear-gradient(135deg, #121212, #1f1f1f);
+            font-family: mainfont;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: rgba(31, 31, 31, 0.9);
+            color: #fff;
+            padding: 20px 0;
+            min-height: 80px;
+            border-bottom: 2px solid rgb(56, 56, 56);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        h1 {
+            text-align: center;
+            color: #fff;
+            margin-bottom: 30px;
+        }
+        #container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .book-box {
+            background-color: rgba(31, 31, 31, 0.9);
+            border: 2px solid rgb(64, 64, 64);
+            border-radius: 20px;
+            width: 300px;
+            margin: 15px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+        }
+        
+        .book-box img {
+            width: 140px;
+            height: 140px;
+            margin-top: 15px;
+        }
+        .book-box h2 {
+            color: #ffffff;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .link-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .link-box {
+            background-color: rgba(31, 31, 31, 0.9);
+            border: 2px solid rgb(64, 64, 64);
+            border-radius: 10px;
+            width: 120px;
+            padding: 10px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+        }
+        .link-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+        }
+        .link-box img {
+            width: 20px;
+            height: 20px;
+            margin-top: 0px;
+            background-color: rgb(61, 61, 61);
+            padding: 3px;
+            border-radius: 5px;
+        }
+        .link-box a {
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            gap: 5px;
+        }
+        .link-box a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"><a href='/'><img src="/projectfiles/Untitled.png" alt="logo" style="height: 80px; width: 110px;"></a></div>
+        <h1>Math Books Resources</h1>
+    </header>
+
+    <div id="container">
+        <!-- Book 1 -->
+        <div class="book-box">
+            <h2>Cengage (JEE Mains & Advanced)</h2>
+            <img src="/projectfiles/path_to_cengagebook_logo.png" alt="Book Logo" style="background-color: rgb(204, 204, 204); border-radius: 10px;">
+            <div class="link-container">
+                <div class="link-box">
+                    <img src="/projectfiles/google-drive-logo.png" alt="Google Drive Logo">
+                    <a href="https://drive.google.com/drive/folders/1JtaPO64VHNmWPZcplwlg7YYsIeigtBdy?usp=sharing" target="_blank">Download PDF</a>
+                </div>
+                <div class="link-box">
+                    <img src="/projectfiles/amazon-logo.png" alt="Amazon Logo">
+                    <a href="https://amzn.to/3YfNq4B" target="_blank">Buy on Amazon</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Book 2 -->
+        <div class="book-box">
+            <h2>Black Book (Advanced Problems in Mathematics)</h2>
+            <div class="link-container">
+                <div class="link-box">
+                    <img src="/projectfiles/google-drive-logo.png" alt="Google Drive Logo">
+                    <a href="https://drive.google.com/drive/folders/1loy8HrsHibsM8NNRI4RWKCEGnPHWlb9y?usp=sharing" target="_blank">Download PDF</a>
+                </div>
+                <div class="link-box">
+                    <img src="/projectfiles/amazon-logo.png" alt="Amazon Logo">
+                    <a href="https://amzn.to/46y52dP" target="_blank">Buy on Amazon</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Book 3 -->
+        <div class="book-box">
+            <h2>Coaching Material</h2>
+            
+            <div>
+                <div >
+                    MOST RECOMMENDED BY HIGH SCORERS
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+</body>
+</html>
